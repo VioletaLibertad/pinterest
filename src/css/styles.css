@@ -62,22 +62,50 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
+#home-btn {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .icon-pinterest {
+    display: none;
+  }
+  .btn-header {
+    display: none;
+  }
+  .icon-header {
+    display: none;
+  }
+  .search-header {
+    max-width: fit-content;
+  }
+}
+
+/* Cards Styles */
+.card-columns {
+  display: inline-block;
+  column-count: 4;
+}
 
 /* Footer Styles */
 .footer-btns-group {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: fixed;
+  right: 2em;
+  bottom: 1em;
+  z-index: 1;
 }
 .btn-footer {
-  height: 44px;
-  width: 44px;
+  height: 42px;
+  width: 42px;
   color: #333;
   font-size: 15px;
   font-weight: 600;
   border-radius: 999px;
   padding: 12.5px;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
 }
 .btn-footer:hover {
   background-color: #f5f5f5;
