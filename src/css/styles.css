@@ -86,6 +86,11 @@ body {
   display: inline-block;
   column-count: 4;
 }
+@media (max-width: 768) {
+  .card-columns {
+    column-count: 2;
+  }
+}
 
 /* Footer Styles */
 .footer-btns-group {
